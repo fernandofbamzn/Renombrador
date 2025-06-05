@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) { // Añade esta condición
+    session_start();
+}
 require_once __DIR__ . '/../config/secrets.php';
 $users = unserialize(USERS);
 

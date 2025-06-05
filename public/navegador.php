@@ -3,7 +3,9 @@
 // Aseguramos la codificación UTF-8
 header('Content-Type: text/html; charset=utf-8');
 
-session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) { // Añade esta condición
+    session_start();
+}
 if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit();

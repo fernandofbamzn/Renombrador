@@ -2,7 +2,9 @@
 header('Content-Type: application/json; charset=utf-8');
 ob_start(); // Inicia el buffer para evitar salida accidental
 
-session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) { // Añade esta condición
+    session_start();
+}
 if (!isset($_SESSION['user'])) {
     header("Location: login.php");
     exit();

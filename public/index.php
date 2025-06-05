@@ -1,5 +1,6 @@
 <?php
 // index.php en la raíz: incluye el contenido principal y define DEBUG_MODE en JS
+require_once __DIR__ . '/../config/config.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">

@@ -2,7 +2,10 @@
 if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
-if (!isset($_SESSION['user'])) {
+if (isset($_SESSION['user']) && is_array($_SESSION['user'])) {
+        $_SESSION['user'] = array();
+    } 
+if (!isset($_SESSION['user'])) {    
     header("Location: login.php");
     exit();
 }
