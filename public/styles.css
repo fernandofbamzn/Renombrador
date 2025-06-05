@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="submit"], button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#generatePatternButton {
+    background-color: #3498db;
+}
+
+#generatePatternButton:hover {
+    background-color: #2980b9;
+}
+
+#previewButton {
+    background-color: #f39c12;
+}
+
+#previewButton:hover {
+    background-color: #d35400;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.colPeq {
+    flex: 0 0 50px;
+}
+
+.colGr {
+    flex: 1;
+}
+
+.new-name {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Nuevos estilos para el men� horizontal */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    text-decoration: none;
+}
+
+/* Estilos básicos para la interfaz de pestañas */
+.tabs {
+    margin: 20px 0;
+  }
+  .tab-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  .tab-links li {
+    margin-right: 10px;
+  }
+  .tab-links li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    background: #f2f2f2;
+    color: #333;
+    border-radius: 4px 4px 0 0;
+  }
+  .tab-links li.active a, .tab-links li a:hover {
+    background: #3498db;
+    color: #fff;
+  }
+  .tab-content .tab {
+    display: none;
+  }
+  .tab-content .tab.active {
+    display: block;
+  }
+  
+  /* Estilos para las tablas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+  }
+  th {
+    background: #f2f2f2;
+  }

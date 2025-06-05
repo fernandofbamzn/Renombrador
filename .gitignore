@@ -1,0 +1,13 @@
+# Archivos de configuración con datos sensibles
+secrets.php
+
+# Otros archivos comunes a ignorar
+*.log
+.env
+.DS_Store
+Thumbs.db
+*.cache
+
+# Archivos temporales
+*.tmp
+*.temp
